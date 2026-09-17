@@ -9,14 +9,14 @@ one place — where the whole family can see it, instead of getting lost
 in one sibling's personal inbox.
 
 💌 **Get your inbox:** [lovedone.app](https://lovedone.app)
-👨‍👩‍👧 **Family app:** [app.joinsandwich.com](https://app.joinsandwich.com)
+👨‍👩‍👧 **Family app:** [inbox.lovedone.app](https://inbox.lovedone.app)
 🌐 **Parent company:** [joinsandwich.com](https://www.joinsandwich.com)
-📚 **Full docs:** [docs.joinsandwich.com](https://docs.joinsandwich.com)
+📚 **Full docs:** [docs.lovedone.app](https://docs.lovedone.app)
 🐙 **Sister repo:** [Terahertz-Inc/sandwich-public](https://github.com/Terahertz-Inc/sandwich-public)
 
 > This is a public, README-only repo. The live landing page is
 > [lovedone.app](https://lovedone.app); the family app lives at
-> [app.joinsandwich.com](https://app.joinsandwich.com).
+> [inbox.lovedone.app](https://inbox.lovedone.app).
 
 ---
 
@@ -43,34 +43,30 @@ The Family Inbox fixes that with **one shared address per loved one**:
 
 ## The address format
 
-Every loved one gets an address shaped like a name plus a zipcode, so
+Every loved one gets an address shaped like a name plus a short code, so
 it's easy to dictate to a hospital intake clerk:
 
 ```
-{first_name}-{3 letters}{2 digits}@lovedone.app
+{first_name}-{last_name}-{4 alphanumeric}@lovedone.app
 ```
 
 Examples:
 
-- `helen-MKR47@lovedone.app`
-- `robert-QPL23@lovedone.app`
+- `helen-smith-AB12@lovedone.app`
+- `robert-chen-K7QX@lovedone.app`
 
-Say it out loud: *"Helen, dash, M-K-R, four-seven, at loved-one-dot-app."*
+Say it out loud: *"Helen, dash, Smith, dash, A-B-1-2, at loved-one-dot-app."*
 
-The 5-char code uses **24 letters (no O or I) + 2 digits** — 1.38
-million combinations per first name. Plenty of headroom, no
+The 4-char code uses **32 characters (24 letters + 8 digits, no I/O/0/1)**
+— about a million combinations per name. Plenty of headroom, no
 visually-confusable characters, no PII leaked into mail headers.
-
-**Privacy mode** swaps the first name for a neutral noun for situations
-where a name leak would be uncomfortable (estranged family, dementia,
-public figures): `meadow-MKR47@lovedone.app`.
 
 ---
 
 ## How it works
 
 1. **Sign up** in the family app at
-   [app.joinsandwich.com](https://app.joinsandwich.com) and add your
+   [inbox.lovedone.app](https://inbox.lovedone.app) and add your
    loved one. An inbox address is generated instantly — no
    configuration needed.
 2. **Tell her providers** — give the address as a second contact email
@@ -103,7 +99,7 @@ Pipe, Sandwich Soft.
 
 Keeping the consumer surface on its own domain means:
 
-- The address `helen-MKR47@lovedone.app` reads as obviously about a
+- The address `helen-smith-AB12@lovedone.app` reads as obviously about a
   loved one's care — not a B2B platform.
 - Providers entering it in an alternate-contact field aren't routed
   through corporate marketing pages.
@@ -111,7 +107,7 @@ Keeping the consumer surface on its own domain means:
   it shows up in someone's inbox.
 
 The two surfaces share one backend, one auth, and one set of
-[docs](https://docs.joinsandwich.com).
+[docs](https://docs.lovedone.app).
 
 ---
 
@@ -122,14 +118,14 @@ The two surfaces share one backend, one auth, and one set of
   ([directory](https://registry.modelcontextprotocol.io/v0.1/servers?search=com.joinsandwich) +
   [care-circle](https://registry.modelcontextprotocol.io/v0.1/servers?search=com.joinsandwich)),
   Sandwich Pipe, Sandwich Soft.
-- 👨‍👩‍👧 [app.joinsandwich.com](https://app.joinsandwich.com) — the
+- 👨‍👩‍👧 [inbox.lovedone.app](https://inbox.lovedone.app) — the
   family workspace. Each loved one's inbox lives at
-  `app.joinsandwich.com/inbox/{lovedOneId}`.
+  `inbox.lovedone.app/inbox/{lovedOneId}`.
 - 🌐 [joinsandwich.com](https://www.joinsandwich.com) — marketing /
   corporate site.
-- 📚 [docs.joinsandwich.com](https://docs.joinsandwich.com) — the
+- 📚 [docs.lovedone.app](https://docs.lovedone.app) — the
   technical hub for the whole stack.
-- 🤖 [app.joinsandwich.com/agents](https://app.joinsandwich.com/agents) —
+- 🤖 [inbox.lovedone.app/agents](https://inbox.lovedone.app/agents) —
   agent / MCP integration guide for the whole platform.
 
 ---
