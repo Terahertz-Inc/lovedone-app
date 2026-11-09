@@ -11,7 +11,7 @@ in one sibling's personal inbox.
 💌 **Get your inbox:** [lovedone.app](https://lovedone.app)
 👨‍👩‍👧 **Family app:** [inbox.lovedone.app](https://inbox.lovedone.app)
 🌐 **Parent company:** [joinsandwich.com](https://www.joinsandwich.com)
-📚 **Full docs:** [docs.lovedone.app](https://docs.lovedone.app)
+📚 **Full docs:** [docs.lovedone.app](https://docs.lovedone.app) · **MCP:** [docs.lovedone.app/mcp-family](https://docs.lovedone.app/mcp-family) · [GitHub listing](https://github.com/Terahertz-Inc/lovedone-mcp)
 🐙 **Sister repo:** [Terahertz-Inc/sandwich-public](https://github.com/Terahertz-Inc/sandwich-public)
 
 > This is a public, README-only repo. The live landing page is
